@@ -186,8 +186,9 @@ export const PricingSection = ({ country }: { country: string }) => {
           {/* Pricing Tiers */}
           <div className="flex justify-center  gap-2 mb-1">
             <span className="text-xs text-muted-foreground">
-              {country === "US" || country === "TR" ? "₺" : "£"}
-              All prices include tax
+              {country === "GB"
+                ? "All prices include tax"
+                : " *Prices in your local currency may differ slightly due to exchange rate fluctuations. The base currency is GBP"}
             </span>
             <TooltipProvider>
               <Tooltip>
