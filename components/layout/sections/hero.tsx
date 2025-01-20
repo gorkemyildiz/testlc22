@@ -48,7 +48,7 @@ export const HeroSection = () => {
           </div>
 
           <p className="max-w-screen-sm mx-auto text-xl text-muted-foreground">
-            {`Manage all your Google Business locations from one unified platform. Effortlessly control multiple locations, customer reviews, and business information with our powerful tools and user-friendly interface.`}
+            {`Manage all your Google Business locations from a single platform. Effortlessly control multiple locations, customer reviews and business details in one place.`}
           </p>
 
           <Link
