@@ -8,7 +8,7 @@ export default async function SsrPricing() {
     headersList.get("x-real-ip") ||
     "127.0.0.1";
 
-  const res = await fetch(`http://ip-api.com/json/159.146.49.249`);
+  const res = await fetch(`http://ip-api.com/json/${ip}`);
   const geo = await res.json();
 
   return <PricingSection country={geo.countryCode} />;
