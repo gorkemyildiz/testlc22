@@ -186,6 +186,7 @@ export const PricingSection = ({ country }: { country: string }) => {
           {/* Pricing Tiers */}
           <div className="flex justify-center  gap-2 mb-1">
             <span className="text-xs text-muted-foreground">
+              {country === "US" || country === "TR" ? "₺" : "£"}
               All prices include tax
             </span>
             <TooltipProvider>
@@ -218,10 +219,13 @@ export const PricingSection = ({ country }: { country: string }) => {
                     </CardTitle>
                     <CardDescription className="relative">
                       <span className="text-xl font-bold text-black dark:text-white">
-                        {country === "US" ? "$" : country === "TR" ? "₺" : "£"}
-                        {currenyPrice
-                          ? `${(currenyPrice * tier.price).toFixed(2)}`
-                          : tier.price}
+                        {currenyPrice &&
+                          country === "US" &&
+                          `$${(currenyPrice * tier.price).toFixed(2)}`}
+                        {currenyPrice &&
+                          country === "TR" &&
+                          `₺${(currenyPrice * tier.price).toFixed(0)}`}
+                        {!currenyPrice && `£${tier.price}`}
                       </span>
                       <span className="text-xs">
                         {" "}

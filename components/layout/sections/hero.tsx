@@ -36,19 +36,19 @@ export const HeroSection = () => {
             <span>Easy to use</span>
           </Badge>
 
-          <div className="max-w-screen-md mx-auto text-center text-4xl font-bold">
+          <div className="mx-auto text-center text-4xl font-bold">
             <h1>
-              Google Reviews Management
+              Single Platform for Multi-Location Google Business Management
               <br />
               <span className="text-transparent px-2 bg-gradient-to-r from-[#D247BF] to-primary bg-clip-text">
                 for
               </span>
-              Enhanced Online Reputation
+              Simplified Location Management
             </h1>
           </div>
 
           <p className="max-w-screen-sm mx-auto text-xl text-muted-foreground">
-            {`Welcome to our platform that puts you in the driver's seat of your Google reviews! With our powerful tools and intuitive interface, managing your Google reviews has never been easier.`}
+            {`Manage all your Google Business locations from one unified platform. Effortlessly control multiple locations, customer reviews, and business information with our powerful tools and user-friendly interface. Strengthening your business's online presence has never been easier.`}
           </p>
 
           <Link
