@@ -37,14 +37,7 @@ export const HeroSection = () => {
           </Badge>
 
           <div className="mx-auto text-center text-4xl font-bold">
-            <h1>
-              Single Platform for Multi-Location Google Business Management
-              <br />
-              <span className="text-transparent px-2 bg-gradient-to-r from-[#D247BF] to-primary bg-clip-text">
-                for
-              </span>
-              Simplified Location Management
-            </h1>
+            <h1>Manage Multiple Google Business Locations</h1>
           </div>
 
           <p className="max-w-screen-sm mx-auto text-xl text-muted-foreground">
