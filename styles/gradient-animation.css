@@ -1,0 +1,9 @@
+.gradient-animate {
+  background-size: 200% 200%;
+  background-position: 0% 0%;
+  transition: background-position 0.8s ease-in-out;
+}
+
+.gradient-animate:hover {
+  background-position: 100% 0%;
+}
